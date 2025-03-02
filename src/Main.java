@@ -16,6 +16,10 @@ public class Main {
             return fatorial(n-1 * n);
     }
 
+    public static double binomioNewton  (int n, int x) {
+        return fatorial(n) / (fatorial(n-x) * fatorial(x));
+    }
+  
     public static double banana(double p, int n, int x){
         return potencia(p,x)  *  potencia((1 - p), n-x);
     }
