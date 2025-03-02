@@ -4,6 +4,11 @@ public class Main {
         System.out.println("Hello, World!");
     }
 
+    public static double potencia (double base, int potencia ){
+        if (potencia == 0) return 1;
+        return base * potencia(base, potencia -1);
+    }
+
     public static double fatorial(double n) {
         if (n == 0)
             return 1;
