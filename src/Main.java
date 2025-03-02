@@ -15,4 +15,8 @@ public class Main {
         else
             return fatorial(n-1 * n);
     }
+
+    public static double banana(double p, int n, int x){
+        return potencia(p,x)  *  potencia((1 - p), n-x);
+    }
 }
