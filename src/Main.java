@@ -15,4 +15,8 @@ public class Main {
         else
             return fatorial(n-1 * n);
     }
+
+    public static double binomioNewton  (int n, int x) {
+        return fatorial(n) / (fatorial(n-x) * fatorial(x));
+    }
 }
