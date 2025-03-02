@@ -2,4 +2,9 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
     }
+
+    public static double potencia (double base, int potencia ){
+        if (potencia == 0) return 1;
+        return base * potencia(base, potencia -1);
+    }
 }
